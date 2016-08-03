@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    display: block;
+    list-style: none;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,400italic,300italic,300,700);
+
+.col1,.col2,.col3,.col4,.col5,.col6,.col7,.col8,.col9,.col10,.col11,.col12{float:left;margin:0 3% 0 0}
+
+.col1.last,.col2.last,.col3.last,.col4.last,.col5.last,.col6.last,.col7.last,.col8.last,.col9.last,.col10.last,.col11.last,.col12{margin:0}
+
+.col1{width:5.5%}
+.col2{width:14%}
+.col3{width:22.5%}
+.col4{width:31%}
+.col5{width:39.5%}
+.col6{width:48%}
+.col7{width:56.5%}
+.col8{width:65%}
+.col9{width:73.5%}
+.col10{width:82%}
+.col11{width:90.5%}
+.col12{width:99%;margin:0}
+
+.limit{max-width:1300px; min-width:700px;margin:0 auto;padding:0 30px;text-align:left;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+.limit:after{content:'';display:table;clear:both}
+
+.last{border-right:0}
+
+/* Logo */
+header .logo{
+    max-width: 113px;
+    height: 60px;
+    background-color: #00acff;
+    position: relative;
+}
+header .logo h1 img{
+    width: 48px;
+    height: 38px;
+    text-align: center;
+    top: 20%;
+    position: absolute;
+    left: 27%;
+}
+/* TÃ­tulo */
+header .title {
+    background-color: #1190cd;
+    height: 41px;
+    padding: 1.5% 0 0 0;
+}
+header .title h2{
+    color: #ffffff;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 1%;
+}
+
+
+.anuncios{
+    background-color: #094e6e;
+    max-width: 107px;
+    height: 660px;
+}
+
+.anuncios li a{
+    padding: 7% 0;
+    display: block;
+    margin: 7%;
+}
+.anuncios li a:hover{
+    border-radius: 4px;
+    background-color: #00acff;
+}
+.anuncios li p{
+    text-align: center;
+    color: #ffffff;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.anuncios li.todos-anuncios span.icone{
+    background: url(../img/building.png) no-repeat center center;
+    display: block;
+    height: 50px;
+    width: 100%;
+}
+
+.anuncios li.novos-anuncios span.icone{
+    background: url(../img/plus-icon.png) no-repeat center center;
+    display: block;
+    height: 50px;
+    width: 100%;
+}
+
+.filtros{
+    background: #EDEDED;
+    height: 660px;
+}
+.filtros .conteudo{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    width: 90%;
+    background-color: #ffffff;
+    margin: 10% auto;
+    height: 620px;
+}
+.filtros p {
+    padding: 15px;
+    color: #666666;
+}
+.filtros label {
+    float: left;
+    font-size: 9px;
+    margin: 2% 5%;
+    color: #666666;
+    display: block;
+    max-width: 100px;
+}
+.filtros input {
+    float: left;
+    display: block;
+    width: 100%;
+    padding: 5% 0;
+    margin: 5% 0;
+}
+.filtros input#vminimo,
+.filtros input#vmaximo {
+    color: #666666;
+    font-size: 9px;
+    height: 15px;
+    padding-left: 5px;
+    max-width: 95px;
+}
+
+.resultados{
+    background: #EDEDED;
+    width: 60%;
+}
+.resultados .conteudo{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    width: 95%;
+    background-color: #ffffff;
+    margin: 4% auto;
+    height: 620px;
+}
+.resultados li{
+    display: block;
+    width: 100%;
+    float: left;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+.resultados figure.img-imovel{
+    float: left;
+    display: block;
+    padding: 2%;
+}
+
+.resultados span.resultados-id {
+    font-size: 12px;
+    color: #999999;
+    border: 1px solid #999999;
+    padding: 2px;
+    margin: 2% 0 0 0;
+    display: block;
+    float: left;
+}
+.resultados strong {
+    width: 50%;
+    float: left;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    font-stretch: condensed;
+    line-height: 1.5;
+    margin: 1% 0;
+    color: #444444;
+}
+.resultados p {
+    font-size: 12px;
+    float: left;
+    width: 50%;
+    display: block;
+    line-height: 18px;
+    color: #999999;
+}
+.resultados figure.des-imovel {
+    float: left;
+    display: block;
+    width: 31%;
+    padding: 0;
+    margin: 0;
+}
+.resultados .cta-visualizar-anuncio{
+    float: left;
+    display: block;
+    width: 19%;
+    border-radius: 2px;
+    background-color: #00acff;
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.12);
+    padding: 1%;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 1024px){
+    .resultados .conteudo {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+        width: 95%;
+        background-color: #ffffff;
+        margin: 4% auto;
+        height: 1050px;
+    }
+    .resultados li {
+        display: block;
+        width: 100%;
+        float: left;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+        margin: 0 auto;
+        height: auto;
+        padding-bottom: 5%;
+    }
+    .resultados figure.img-imovel {
+        padding: 2%;
+        width: 96%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .resultados span.resultados-id {
+        font-size: 12px;
+        color: #999999;
+        border: 1px solid #999999;
+        padding: 2px;
+        margin: 2% 0 0 0;
+        display: block;
+        float: left;
+        margin-left: 45%;
+    }
+    .resultados strong {
+        width: 96%;
+        float: left;
+        display: block;
+        font-size: 15px;
+        font-weight: 400;
+        font-stretch: condensed;
+        line-height: 1.5;
+        margin: 1% 0;
+        color: #444444;
+        clear: both;
+        text-align: center;
+    }
+    .resultados p {
+        font-size: 12px;
+        float: left;
+        width: 98%;
+        display: block;
+        line-height: 18px;
+        color: #999999;
+        padding: 0 0%;
+        text-align: center;
+    }
+    .resultados figure.des-imovel {
+        float: left;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .resultados .cta-visualizar-anuncio {
+        float: left;
+        display: block;
+        width: 25%;
+        border-radius: 2px;
+        background-color: #00acff;
+        box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.12);
+        padding: 1%;
+        color: #ffffff;
+        margin-top: 10px;
+        text-align: center;
+        margin-left: 35%;
+    }
+}
+
+@media (max-width: 480px){
+    .limit{
+        margin: 0px;
+    }
+    header .logo{
+        height: 51px;
+    }
+    .filtros{
+        display: none;
+    }
+    .anuncios{
+        display: none;
+    }
+
+}
